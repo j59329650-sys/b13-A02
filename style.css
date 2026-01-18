@@ -1,0 +1,9 @@
+body{
+    background-color: #331552;
+    color: #ffffff;
+
+}
+/* navbar */
+.navbar{
+    display: flex;
+}
