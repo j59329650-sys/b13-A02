@@ -48,3 +48,25 @@ body{
     background-clip: text;
     color: transparent;
 }
+.btn-subscribe{
+    width: 135px;
+    height: 44px;
+    border-radius: 22px;
+    background: linear-gradient(90deg,#F7E93F 0%, #FB09B4 51%,#9100F8 100%);
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 77, 77, 0.3);
+}
+.btn-subscribe:hover{
+    transform: scale(1.05);
+    filter: brightness(1.1);
+
+}
