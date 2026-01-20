@@ -85,7 +85,15 @@ body{
     color: #fff;
 
 }
+.header-logo{
+    display: inline-block;
+    position: relative;
+
+
+
+}
 .hero-container{
+    
     position: relative;
     text-align: center;
     color: #ffffff;
@@ -93,23 +101,33 @@ body{
     padding: 20px;
 }
 .sound-wave-wrapper{
+    
     position: relative;
-    display: inline-block;
-    margin-bottom: 30px;
-}
-.mic-circle{
-    width: 180px;
-    height: 180px;
-    background: radial-gradient(circle, #F7E93F, #FB09B4, #9100F8);
-    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 60px rgba(255, 0, 204, 0.4);
+    
+}
+.bg-circle{width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+
+}
+.mic-image{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 30%;
+    z-index: 2;
 }
 .badge-new{
     position: absolute;
-    top: 10px;
+    top: 20px;
     right: -10px;
     background: #00ff88;
     color: black;
@@ -117,6 +135,7 @@ body{
     border-radius: 20px;
     font-size: 12px;
     font-weight: bold;
+    z-index: 3;
 }
 /* title and button */
 .main-title{
@@ -146,43 +165,12 @@ body{
     padding: 12px 30px;
     border-radius: 30px;
 }
-
-
-
-
-
-
-
-
-/* mobile Device */
-@media screen and (max-width:768) {
-    .logo-img{
-        width: 150px;
-    }
-    h1{
-        font-size: 2rem;
-    }
-    .tagline{
-        font-size: 1rem;
-        padding: 0 10px;
-    }
-    .botton-container{
-        flex-direction: column;
-    }
-    .wavefrom-icons{
-        display: none;
-    }
-    
-}
 /* podcast style */
 .about-podcast{
     padding: 60px 20px;
     text-align: center;
 }
-.container{
-    max-width: 1200px;
-    margin: 80px  auto;
-}
+
 h2{
     font-size: 2.5rem;
     margin-bottom: 20px;
@@ -196,6 +184,7 @@ h2{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 30px;
+    flex-wrap: wrap;
 }
 .stat-box h3 {
     font-size: 32px;
@@ -206,4 +195,118 @@ h2{
 .stat-box p {
     font-size: 14px;
     color: #aaaaaa;
+}
+/* TechWave-section */
+.section-title{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+.features-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid: gap 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.feature-card{
+    background-color: #1c143d;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 20px;
+}
+.feature-card h3{
+    margin: 15px 0;
+    font-size: 1.2rem;
+}
+.feature-card p{
+    color: #aaa;
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+
+.icon {
+    font-size:  24px;
+    margin-bottom: 10px;
+}
+/* episodes style */
+.main-container{
+    max-width: 1000px;
+    max-width: o auto;
+}
+.section-title{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.episodes-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+}
+.card{
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 15px;
+    width: 332px;
+    height: 35;
+
+}
+
+
+.thumbnail{
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* responsive */
+@media screen  and(max-width:576px){
+    .description{
+        flex-direction: column;
+    }
+    
+}
+
+
+/* mobile  */
+@media (max-width: 768px){
+    .description{
+        grid-template-columns: 2fr;
+    }
+    .about-podcast{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .stat-box h3{
+        font-size: 1.5rem;
+    }
+    .stat-box p {
+        font-size: 1.8rem;
+    }
+    .features-container {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+
 }
