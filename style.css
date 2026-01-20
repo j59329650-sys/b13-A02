@@ -1,0 +1,222 @@
+body{
+    background-color: #331552;
+    color: #ffffff;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.work-sans-font {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+
+
+
+
+
+
+/* navbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.nav-link{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+.nav-link a{
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+.wave-text{
+    background: linear-gradient(to right,#ff00cc, #3333ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.btn-subscribe{
+    width: 135px;
+    height: 44px;
+    border-radius: 22px;
+    background: linear-gradient(90deg,#F7E93F 0%, #FB09B4 51%,#9100F8 100%);
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 77, 77, 0.3);
+}
+.btn-subscribe:hover{
+    transform: scale(1.05);
+    filter: brightness(1.1);
+
+}
+/* hero section style */
+.hero{
+    height: 100vh;
+    background-image: url("assets/hero-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #fff;
+
+}
+.header-logo{
+    display: inline-block;
+    position: relative;
+
+
+
+}
+.hero-container{
+    
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+    max-width: 700px;
+    padding: 20px;
+}
+.sound-wave-wrapper{
+    
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.bg-circle{width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+
+}
+.mic-image{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 30%;
+    z-index: 2;
+}
+.badge-new{
+    position: absolute;
+    top: 20px;
+    right: -10px;
+    background: #00ff88;
+    color: black;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    z-index: 3;
+}
+/* title and button */
+.main-title{
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+}
+.description{
+    color: #aaa;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 800;
+    margin: 0 auto 20px;
+}
+.btn-spotify{
+    background: linear-gradient(90deg, #f093fb, #f5576c);
+    border: none;
+    padding: 12px 30px;border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    margin-right: 15px;
+}
+.btn-sub-outline{
+    background: transparent;
+    border:  1px solid #00ff88;
+    color: #00ff88;
+    padding: 12px 30px;
+    border-radius: 30px;
+}
+/* podcast style */
+.about-podcast{
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h2{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.cta-text{
+    font-weight: bold;
+    color: #eee;
+    margin-bottom: 50px;
+}
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.stat-box h3 {
+    font-size: 32px;
+    color: #3cff6a;
+    margin-bottom: 8px;
+
+}
+.stat-box p {
+    font-size: 14px;
+    color: #aaaaaa;
+}
+
+
+
+
+
+
+
+
+
+/* responsive */
+@media screen  and(max-width:576px){
+    .description{
+        flex-direction: column;
+    }
+    
+}
+
+
+/* mobile  */
+@media (max-width: 768px){
+    .description{
+        grid-template-columns: 2fr;
+    }
+}
